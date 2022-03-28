@@ -21,3 +21,6 @@ password = driver.find_element(By.NAME, 'password')
 # заполняем поля формы
 login.send_keys('user@phptravels.com')
 password.send_keys('demouser')
+
+btn = driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]')
+btn.click()
